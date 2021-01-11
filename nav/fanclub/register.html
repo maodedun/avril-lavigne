@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<title>成员注册-艾薇儿</title>
+		<link rel="stylesheet" type="text/css" href="../../css/main.css">
+		<link rel="stylesheet" type="text/css" href="../../css/fanclub.css">
+
+	</head>
+	<body>
+		<div id="head_div"></div>
+		<div id="nav_content">
+		<nav>
+			<ul>
+				<li><a href="../../index.html">首页</a></li>
+				<li><a href="../music.html">音乐</a></li>
+				<li><a href="../mv.html">MV</a></li>
+				<li><a href="../photo.html">图片</a></li>
+				<li><a href="../info.html">资讯</a></li>
+				<li><a href="../fanclub.html" class="active">歌迷会</a></li>
+				<li><a href="../about.html">关于</a></li>
+				<li><img src="../../images/blackstar.png"></li>
+				<li id="copyright">&copy;fetionSTU</li>
+			</ul>
+		</nav>
+		<div id="content">
+			<h1>歌迷会成员注册</h1>
+			<form id="register_form" method="post" action="register_ok.html">
+				<table>
+					<tr>
+						<td>用户名</td>
+						<td><input class="kuang_style" type="text" placeholder="请输入用户名" required></td>
+					</tr>
+					<tr>
+						<td>密码</td>
+						<td><input class="kuang_style" type="password" placeholder="请输入密码" required></td>
+					</tr>
+					<tr>
+						<td>Email</td>
+						<td><input class="kuang_style" type="email" placeholder="请输入邮箱" required></td>
+					</tr>
+					<tr>
+						<td>性别</td>
+						<td><input type="radio" name="sex" value="male">男<input type="radio" name="sex" value="female">女</td>
+					</tr>
+					<tr>
+						<td>年龄</td>
+						<td><input class="kuang_style" type="text" placeholder="20"></td>
+					</tr>
+					<tr>
+						<td>用户头像</td>
+						<td><input type="file" id="myfile"></td>
+					</tr>
+					<tr>
+						<td>喜欢的专辑</td>
+						<td>
+							<input type="checkbox" value="a1">Let Go
+							<input type="checkbox" value="a2">Under My Skin
+							<input type="checkbox" value="a3">The Best Damn Thing<br>
+							<input type="checkbox" value="a4">Goodbye Lullaby
+							<input type="checkbox" value="a5">Avril Lavigne
+							<input type="checkbox" value="a6">Head Above Water
+						</td>
+					</tr>
+					<tr>
+						<td>最爱专辑打分</td>
+						<td><input type="range" min="0" max="10" value="6">最低0分，最高10分</td>
+					</tr>
+					<tr>
+						<td>期望歌迷会<br>召开时间</td>
+						<td><input class="kuang_style" type="date"></td>
+					</tr>
+					<tr>
+						<td>留言</td>
+						<td><textarea id="liuyan" placeholder="请在此输入您的留言！" rows="5" cols="60"></textarea></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><input class="button_style" id="button_submit" type="submit" value="提交"><input class="button_style" id="button_reset" type="reset" value="重置"></td>
+					</tr>
+				</table>
+			</form>
+
+		</div>
+		</div>
+	</body>
+</html>

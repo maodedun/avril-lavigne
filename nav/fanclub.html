@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<title>歌迷会-艾薇儿</title>
+		<link rel="stylesheet" type="text/css" href="../css/main.css">
+		<link rel="stylesheet" type="text/css" href="../css/fanclub.css">
+
+	</head>
+	<body>
+		<div id="head_div"></div>
+		<div id="nav_content">
+		<nav>
+			<ul>
+				<li><a href="../index.html">首页</a></li>
+				<li><a href="music.html">音乐</a></li>
+				<li><a href="mv.html">MV</a></li>
+				<li><a href="photo.html">图片</a></li>
+				<li><a href="info.html">资讯</a></li>
+				<li><a href="fanclub.html" class="active">歌迷会</a></li>
+				<li><a href="about.html">关于</a></li>
+				<li><img src="../images/blackstar.png"></li>
+				<li id="copyright">&copy;fetionSTU</li>
+			</ul>
+		</nav>
+		<div id="content">
+			<div id="fan_login_register">
+				<h1>歌迷登录</h1>
+				<form method="post" action="fanclub/login_ok.html">
+					<table>
+					<tr><td>
+					<input id="username" type="text" placeholder="  用户名" required>
+					</td></tr>
+					<tr><td>
+					<input id="password" type="password" placeholder="  密码" required>
+					</td></tr>
+					<tr><td>
+					<input id="login" type="submit" value="登录">
+					</td></tr>
+					</table>
+				</form>
+				<h1>歌迷会成员注册</h1>
+				<a href="fanclub/register.html"><button id="register">注册</button></a>
+			</div>
+			<div id="show_fan_pic">
+				<img class="fangdatupian" src="fanclub/show1.jpg">
+				<img class="fangdatupian" src="fanclub/show2.jpeg">
+				<img class="fangdatupian" src="fanclub/show3.jpeg">
+				<img class="fangdatupian" src="fanclub/show4.jpeg">
+			</div>
+		</div>
+		</div>
+	</body>
+</html>

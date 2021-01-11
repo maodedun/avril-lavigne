@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<title>音乐-艾薇儿</title>
+		<link rel="stylesheet" type="text/css" href="../css/main.css">
+		<link rel="stylesheet" type="text/css" href="../css/music.css">
+		
+		<script>
+			function music_play(){
+				var audio = document.getElementById('letgo_05');
+				if(audio.paused){
+					audio.play();//audio.play();// 播放
+				}
+				else{
+					audio.pause();// 暂停
+				}
+			}
+			
+			function musicapp_target(){
+				var tr_num = document.getElementsByTagName("tr");
+				for(var i = 0; i < tr_num.length; i++){
+					var a_num = tr_num[i].getElementsByTagName("a");
+					for(var j = 1; j < a_num.length; j++){/*除第一个a标签*/
+						a_num[j].target = "_blank";/*遍历局部a标签并设置target属性值*/
+					}
+				}
+			}
+
+		</script>
+	</head>
+	<body>
+		<div id="head_div"></div>
+		<div id="nav_content">
+		<nav>
+			<ul>
+				<li><a href="../index.html">首页</a></li>
+				<li><a href="../nav/music.html" class="active">音乐</a></li>
+				<li><a href="../nav/mv.html">MV</a></li>
+				<li><a href="../nav/photo.html">图片</a></li>
+				<li><a href="../nav/info.html">资讯</a></li>
+				<li><a href="../nav/fanclub.html">歌迷会</a></li>
+				<li><a href="../nav/about.html">关于</a></li>
+				<li><img src="../images/blackstar.png"></li>
+				<li id="copyright">&copy;fetionSTU</li>
+			</ul>
+		</nav>
+		<div id="content">
+			<div id="album">
+				<a href="#album_1"  onclick="musicapp_target();"><img src="album/LetGo.jpg"></a>
+				<a href="#album_2" onclick="musicapp_target();"><img src="album/UnderMySkin.jpg"></a>
+				<a href="#album_3" onclick="musicapp_target();"><img src="album/TheBestDamnThing.jpg"></a>
+				<a href="#album_4" onclick="musicapp_target();"><img src="album/GoodbyeLullaby.jpg"></a>
+				<a href="#album_5" onclick="musicapp_target();"><img src="album/AvrilLavigne.jpg"></a>
+				<a href="#album_6" onclick="musicapp_target();"><img src="album/HeadAboveWater.jpg"></a>
+			</div>
+			<div class="album_detail" id="album_1">
+				<div class="album_cover">
+					<img src="album/LetGo.jpg">
+					<h2>Let Go</h2>
+				</div>
+				<table class="album_list">
+					<tr><td>01</td><td><img src="../images/play_button.png">&nbsp;Losing Grip&nbsp;&nbsp;&nbsp;<img src="../images/mv_button.png"><a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>02</td><td><img src="../images/play_button.png">&nbsp;Complicated&nbsp;&nbsp;&nbsp;<img src="../images/mv_button.png"><a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>03</td><td><img src="../images/play_button.png">&nbsp;Sk8er Boi&nbsp;&nbsp;&nbsp;<img src="../images/mv_button.png"><a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>04</td><td><img src="../images/play_button.png">&nbsp;I'm with You&nbsp;&nbsp;&nbsp;<a href="mv.html#play_I_m_With_You"><img src="../images/mv_button.png"></a><a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>05</td><td><a href="javascript:music_play();"><img src="../images/play_button.png"></a>&nbsp;Mobile&nbsp;&nbsp;&nbsp;<a href="mv.html#play_letgo_mobile"><img src="../images/mv_button.png"></a>
+					
+					<audio id="letgo_05" src="album/letgo/05 mobile.mp3"></audio>
+					
+					<a href="https://www.xiami.com/song/ck9QVfe1b1"><img class="musicapp" src="../images/xiami_button.png"></a><a href="https://music.163.com/#/song?id=16431883"><img class="musicapp" src="../images/wyy_button.png"></a><a href="https://y.qq.com/n/yqq/song/000YDTgB0mC1AB.html"><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>06</td><td><img src="../images/play_button.png">&nbsp;Unwanted<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>07</td><td><img src="../images/play_button.png">&nbsp;Tomorrow<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>08</td><td><img src="../images/play_button.png">&nbsp;Anything But Ordinary<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>09</td><td><img src="../images/play_button.png">&nbsp;Things I'll Never Say<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>10</td><td><img src="../images/play_button.png">&nbsp;My World<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>11</td><td><img src="../images/play_button.png">&nbsp;Nobody's Fool<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>12</td><td><img src="../images/play_button.png">&nbsp;Too Much to Ask<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>13</td><td><img src="../images/play_button.png">&nbsp;Naked<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+				</table>
+			</div>
+			<br>
+			<div class="album_detail" id="album_2">
+				<div class="album_cover">
+					<img src="album/UnderMySkin.jpg">
+					<h2>Under My Skin</h2>
+				</div>
+				<table class="album_list">
+					<tr><td>01</td><td><img src="../images/play_button.png">&nbsp;Take Me Away&nbsp;&nbsp;&nbsp;<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>02</td><td><img src="../images/play_button.png">&nbsp;Together&nbsp;&nbsp;&nbsp;<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>03</td><td><img src="../images/play_button.png">&nbsp;Don't Tell Me&nbsp;&nbsp;&nbsp;<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>04</td><td><img src="../images/play_button.png">&nbsp;He Wasn't&nbsp;&nbsp;&nbsp;<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>05</td><td><img src="../images/play_button.png">&nbsp;How does It Feel&nbsp;&nbsp;&nbsp;<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>06</td><td><img src="../images/play_button.png">&nbsp;My Happy Ending<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>07</td><td><img src="../images/play_button.png">&nbsp;Nobody's Home<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>08</td><td><img src="../images/play_button.png">&nbsp;Forgotten<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>09</td><td><img src="../images/play_button.png">&nbsp;Who Knows<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>10</td><td><img src="../images/play_button.png">&nbsp;Fall To Pieces<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>11</td><td><img src="../images/play_button.png">&nbsp;Freak Out<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>12</td><td><img src="../images/play_button.png">&nbsp;Slipped Away<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>13</td><td><img src="../images/play_button.png">&nbsp;I Always Get What I Want<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+				</table>
+			</div>
+			<br>
+			<div class="album_detail" id="album_3">
+				<div class="album_cover">
+					<img src="album/TheBestDamnThing.jpg">
+					<h2>The Best Damn Thing</h2>
+				</div>
+				<table class="album_list">
+					<tr><td>01</td><td><img src="../images/play_button.png">&nbsp;Girlfriend&nbsp;&nbsp;&nbsp;<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>02</td><td><img src="../images/play_button.png">&nbsp;I Can Do Better&nbsp;&nbsp;&nbsp;<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>03</td><td><img src="../images/play_button.png">&nbsp;Runaway&nbsp;&nbsp;&nbsp;<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>04</td><td><img src="../images/play_button.png">&nbsp;The Best Damn Thing&nbsp;&nbsp;&nbsp;<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>05</td><td><img src="../images/play_button.png">&nbsp;When You're Gone&nbsp;&nbsp;&nbsp;<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>06</td><td><img src="../images/play_button.png">&nbsp;Everything Back But You<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>07</td><td><img src="../images/play_button.png">&nbsp;Hot<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>08</td><td><img src="../images/play_button.png">&nbsp;Innocence<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>09</td><td><img src="../images/play_button.png">&nbsp;I Don't Have To Try<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>10</td><td><img src="../images/play_button.png">&nbsp;One Of Those Girls<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>11</td><td><img src="../images/play_button.png">&nbsp;Contagious<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>12</td><td><img src="../images/play_button.png">&nbsp;Keep Holding On<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>13</td><td><img src="../images/play_button.png">&nbsp;Alone<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>14</td><td><img src="../images/play_button.png">&nbsp;I Will Be<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>15</td><td><img src="../images/play_button.png">&nbsp;I Can Do Better (Acoustic Version)<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>16</td><td><img src="../images/play_button.png">&nbsp;Girlfriend (The Submarines' Time Warp '66 Mix - English)<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>17</td><td><img src="../images/play_button.png">&nbsp;Girlfriend (Dr. Luke Mix)<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+				</table>
+			</div>
+			<br>
+			<div class="album_detail" id="album_4">
+				<div class="album_cover">
+					<img src="album/GoodbyeLullaby.jpg">
+					<h2>Goodbye Lullaby</h2>
+				</div>
+				<table class="album_list">
+					<tr><td>01</td><td><img src="../images/play_button.png">&nbsp;Black Star&nbsp;&nbsp;&nbsp;<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>02</td><td><img src="../images/play_button.png">&nbsp;What the Hell&nbsp;&nbsp;&nbsp;<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>03</td><td><img src="../images/play_button.png">&nbsp;Push&nbsp;&nbsp;&nbsp;<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>04</td><td><img src="../images/play_button.png">&nbsp;Wish You Were Here&nbsp;&nbsp;&nbsp;<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>05</td><td><img src="../images/play_button.png">&nbsp;Smile&nbsp;&nbsp;&nbsp;<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>06</td><td><img src="../images/play_button.png">&nbsp;Stop Standing There<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>07</td><td><img src="../images/play_button.png">&nbsp;I Love You<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>08</td><td><img src="../images/play_button.png">&nbsp;Everybody Hurts<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>09</td><td><img src="../images/play_button.png">&nbsp;Not Enough<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>10</td><td><img src="../images/play_button.png">&nbsp;4 Real<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>11</td><td><img src="../images/play_button.png">&nbsp;Darlin<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>12</td><td><img src="../images/play_button.png">&nbsp;Alice (Extended Version)<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>13</td><td><img src="../images/play_button.png">&nbsp;Remember When<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>14</td><td><img src="../images/play_button.png">&nbsp;Goodbye<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>15</td><td><img src="../images/play_button.png">&nbsp;What The Hell (Acoustic Version)<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>16</td><td><img src="../images/play_button.png">&nbsp;Push (Acoustic Version)<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>17</td><td><img src="../images/play_button.png">&nbsp;Wish You Were Here (Acoustic Version)<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>18</td><td><img src="../images/play_button.png">&nbsp;Bad Reputation<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>19</td><td><img src="../images/play_button.png">&nbsp;What The Hell (Bimbo Jones Remix)<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>20</td><td><img src="../images/play_button.png">&nbsp;What The Hell (Instrumental)<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>21</td><td><img src="../images/play_button.png">&nbsp;Wish You Were Here (Instrumental)<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+				</table>
+			</div>
+			<br>
+			<div class="album_detail" id="album_5">
+				<div class="album_cover">
+					<img src="album/AvrilLavigne.jpg">
+					<h2>Avril Lavigne</h2>
+				</div>
+				<table class="album_list">
+					<tr><td>01</td><td><img src="../images/play_button.png">&nbsp;Rock N Roll&nbsp;&nbsp;&nbsp;<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>02</td><td><img src="../images/play_button.png">&nbsp;Here's to Never Growing Up&nbsp;&nbsp;&nbsp;<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>03</td><td><img src="../images/play_button.png">&nbsp;17&nbsp;&nbsp;&nbsp;<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>04</td><td><img src="../images/play_button.png">&nbsp;Bitchin' Summer&nbsp;&nbsp;&nbsp;<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>05</td><td><img src="../images/play_button.png">&nbsp;Let Me Go&nbsp;&nbsp;&nbsp;<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>06</td><td><img src="../images/play_button.png">&nbsp;Give You What You Like<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>07</td><td><img src="../images/play_button.png">&nbsp;Bad Girl<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>08</td><td><img src="../images/play_button.png">&nbsp;Hello Kitty<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>09</td><td><img src="../images/play_button.png">&nbsp;You Ain't Seen Nothin' Yet<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>10</td><td><img src="../images/play_button.png">&nbsp;Sippin' On Sunshine<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>11</td><td><img src="../images/play_button.png">&nbsp;Hello Heartache<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>12</td><td><img src="../images/play_button.png">&nbsp;Falling Fast<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>13</td><td><img src="../images/play_button.png">&nbsp;Hush Hush<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>14</td><td><img src="../images/play_button.png">&nbsp;Rock N Roll (Acoustic)<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>15</td><td><img src="../images/play_button.png">&nbsp;Bad Reputation<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>16</td><td><img src="../images/play_button.png">&nbsp;How You Remind Me<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+				</table>
+			</div>
+			<br>
+			<div class="album_detail" id="album_6">
+				<div class="album_cover">
+					<img src="album/HeadAboveWater.jpg">
+					<h2>Head Above Water</h2>
+				</div>
+				<table class="album_list">
+					<tr><td>01</td><td><img src="../images/play_button.png">&nbsp;Head Above Water&nbsp;&nbsp;&nbsp;<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>02</td><td><img src="../images/play_button.png">&nbsp;Birdie&nbsp;&nbsp;&nbsp;<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>03</td><td><img src="../images/play_button.png">&nbsp;I Fell In Love With The Devil&nbsp;&nbsp;&nbsp;<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>04</td><td><img src="../images/play_button.png">&nbsp;Tell Me It's Over&nbsp;&nbsp;&nbsp;<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>05</td><td><img src="../images/play_button.png">&nbsp;Dumb Blonde (feat. Nicki Minaj)&nbsp;&nbsp;&nbsp;<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>06</td><td><img src="../images/play_button.png">&nbsp;It Was In Me<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>07</td><td><img src="../images/play_button.png">&nbsp;Souvenir<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>08</td><td><img src="../images/play_button.png">&nbsp;Crush<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>09</td><td><img src="../images/play_button.png">&nbsp;Goddess<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>10</td><td><img src="../images/play_button.png">&nbsp;Bigger Wow<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>11</td><td><img src="../images/play_button.png">&nbsp;Love Me Insane<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+					<tr><td>12</td><td><img src="../images/play_button.png">&nbsp;Warrior<a><img class="musicapp" src="../images/xiami_button.png"></a><a><img class="musicapp" src="../images/wyy_button.png"></a><a><img class="musicapp" src="../images/qqmusic_button.png"></a></td></tr>
+				</table>
+			</div>
+			<br>			
+		</div>
+		</div>
+	</body>
+</html>
