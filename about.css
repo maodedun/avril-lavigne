@@ -1,0 +1,96 @@
+/* 框架修改 */
+body{
+	background-image:url(../images/about_bg.jpg);
+}
+nav a.active {
+    background-color:LavenderBlush;
+}
+#content{
+	background-color:LavenderBlush;
+}
+
+/* 新增 */
+#jianjie_pic{
+	float:left;
+	width:30%;
+	border-radius:10px;
+}
+#jibenziliao{
+	width:70%;
+	float:left;
+}
+#jibenziliao > dl{
+	margin:20px 0 0 20px;
+}
+#jibenziliao > dl > dt{
+	float:left;
+	margin-left:10px;
+	padding:10px 0 10px 3px;
+	width:11%;
+	font-weight:bold;
+}
+#jibenziliao > dl > dd{
+	float:left;
+	width:36%;
+	margin:0;
+	padding:10px 0 10px 0;
+	border-bottom:2px dashed darkgray;
+}
+
+
+/* 简介 */
+#content a:link{
+	color:PaleVioletRed;
+}
+#content a:visited{
+	color:PaleVioletRed;
+}
+#content a:active{
+	color:black;
+}
+h1{
+	font-family:"STFangsong";
+	border-left:15px solid PaleVioletRed;
+}
+
+#jianjie{
+	clear:both;
+	margin-top:450px;
+	border-top:5px dotted PaleVioletRed;
+}
+#jianjie p:first-letter{
+	font-family:"STFangsong";
+	font-size:2em;
+	color:PaleVioletRed;
+}
+#jianjie p{
+	text-indent:2em;
+	font-size:17px;
+	line-height:30px;
+}
+#childhood,#timeline{
+	float:left;
+}
+#childhood{
+	width:45%;
+}
+#childhood img{
+	float:left;
+	width:40%;
+	margin-top:15px;
+	margin-right:20px;
+	margin-left:15px;
+	margin-bottom:15px;
+	border-radius:10px;
+}
+#timeline{
+	width:52%;
+	margin-left:3%;
+}
+#timeline table {
+    border-collapse:collapse;
+}
+#timeline td{
+	padding:6px;
+	border:3px dashed PaleVioletRed;
+}

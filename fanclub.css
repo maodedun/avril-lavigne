@@ -1,0 +1,105 @@
+/* 框架修改 */
+body{
+	background-image:url(../images/fanclub_bg.jpeg);
+	background-size:100% 100%;
+}
+nav a.active {
+    background-color:LightBLue;
+}
+#content{
+	background-color:LightBLue;
+}
+
+/* 新增 */
+h1{
+	font-family:"STFangsong";
+	border-left:15px solid #1E90FF;
+}
+h2{
+	font-family:"STFangsong";
+	margin-left:20px;
+}
+#fan_login_register{
+	width:30%;
+	float:left;
+	/* background-color:yellow; */
+}
+form{
+	margin-left:15px;
+	margin-bottom:10px;
+}
+#username,#password{
+	width:280px;
+	height:30px;
+	margin-bottom:10px;
+	border:none;
+	border-radius:5px;
+}
+#login,#register{
+	height:30px;
+	border-radius:5px;
+	border:none;
+	background-color:#1E90FF;
+	font-size:1.2em;
+	font-family:"STFangsong";
+	font-weight:bold;
+}
+#register{
+	margin-left:18px;
+}
+
+#show_fan_pic{
+	width:70%;
+	float:left;
+	text-align:center;
+	/* background-color:yellow; */
+}
+#show_fan_pic img{
+	float:right;
+	margin:1%;
+	width:45%;
+	border-radius:10px;
+}
+.fangdatupian:hover{
+	transform:scale(1.2);
+	transition:transform 0.5s ease;
+}
+
+/* 注册 */
+#register_form table{
+	font-family:"STFangsong";
+	width:100%;
+}
+#register_form table td{
+	border-bottom:3px dashed #1E90FF;
+	padding:10px;
+	font-size:1.3em;
+}
+#register_form table td:first-child{
+	font-size:1.5em;
+	font-weight:bold;
+}
+.kuang_style{
+	width:280px;
+	height:30px;
+	border:none;
+	border-radius:5px;
+}
+.button_style{
+	height:30px;
+	border-radius:5px;
+	border:none;
+	background-color:#1E90FF;
+	font-size:1.2em;
+	font-family:"STFangsong";
+	font-weight:bold;
+}
+#button_submit{
+	margin-left:10%;
+}
+#button_reset{
+	margin-left:10%;
+}
+#liuyan{
+	border:none;
+}

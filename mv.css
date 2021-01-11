@@ -1,0 +1,46 @@
+/* 框架修改 */
+body{
+	background-image:url(../images/mv_bg.jpg);
+	background-size:100% 100%;
+}
+nav a.active {
+    background-color:#2DB369;
+}
+#content{
+	background-color:#2DB369;
+}
+
+/* 新增 */
+#all_mv{
+	float:left;
+	width:32%;
+	padding-right:2%;
+	text-align:center;
+	border-right:5px dotted SeaGreen;
+	font-size:1.2em;
+}
+.mv_num:target{
+	display:block;
+}
+.mv_num{
+	display:none;
+	float:left;
+	width:65%;
+}
+#all_mv img{
+	width:90%;
+	margin-top:20px;
+	border-radius:10px;
+}
+#all_mv img:hover{
+	box-shadow:8px 8px 5px SeaGreen;
+}
+#play_mv{
+	position:fixed;
+	right:12%;
+	margin-top:1.5%;
+}
+.mv_num video{
+	border-radius:10px;
+	box-shadow:8px 8px 10px SeaGreen;
+}
